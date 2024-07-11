@@ -9,9 +9,9 @@ jobs:
     steps:
       
       - name: echo a string
-        run: echo $MY_VARIABLE
-        env:
-          MY_VARIABLE: ${{ env.KENNY }} 
+        run: |
+           echo "TEST: ${KENNY}"
+           echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
       - name: multiline script
         run: |
           python3 -V
