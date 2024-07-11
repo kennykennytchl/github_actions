@@ -7,8 +7,11 @@ jobs:
       matrix:
         os: [ubuntu-latest, ubuntu-20.04]
     steps:
+      
       - name: echo a string
-        run: echo $KENNY 
+        run: echo $KENNY
+        env:
+          MY_VARIABLE: ${{ env.KENNY }} 
       - name: multiline script
         run: |
           python3 -V
