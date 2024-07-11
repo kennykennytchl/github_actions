@@ -10,7 +10,7 @@ jobs:
       
       - name: echo a string
         run: |
-           echo "TEST: ${KENNY}"
+           echo "TEST: ${{ vars.KENNY }}"
            echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
       - name: multiline script
         run: |
