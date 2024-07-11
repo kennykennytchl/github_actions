@@ -9,7 +9,7 @@ jobs:
     steps:
       
       - name: echo a string
-        run: echo $KENNY
+        run: echo $MY_VARIABLE
         env:
           MY_VARIABLE: ${{ env.KENNY }} 
       - name: multiline script
